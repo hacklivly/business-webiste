@@ -69,153 +69,6 @@
       background: #fff;
     }
 
-    #scroller {
-      white-space: nowrap;
-      overflow-x: auto;
-      overflow-y: hidden;
-      position: relative;
-      z-index: 10;
-      margin-bottom: 3rem;
-    }
-
-    #scroller::-webkit-scrollbar {
-      display: none;
-    }
-
-    #scroller-in {
-      display: inline-block;
-      white-space: nowrap;
-      animation: scroll 20s linear infinite;
-    }
-
-    #scroller h4 {
-      font-family: 'Gilroy', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      display: inline-block;
-      margin-right: 2rem;
-      color: #000;
-    }
-
-    @keyframes scroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-100%); }
-    }
-
-    #about-us {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 3rem;
-    }
-
-    #about-us img {
-      width: 200px;
-      height: 200px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    #about-us-in {
-      width: 50%;
-      text-align: center;
-    }
-
-    #about-us-in h3 {
-      font-family: 'Gilroy', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    #about-us-in p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    #cards-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    .card {
-      width: 30%;
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card:nth-child(1) {
-      background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
-    }
-
-    .card:nth-child(2) {
-      background-image: url('https://images.unsplash.com/photo-1516321310764-8a2388150b0b');
-    }
-
-    .card:nth-child(3) {
-      background-image: url('https://images.unsplash.com/photo-1507238691740-903d1c7b8b20');
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      color: #fff;
-    }
-
-    .card:hover .overlay {
-      opacity: 1;
-    }
-
-    .overlay h4 {
-      font-family: 'Gilroy', sans-serif;
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .overlay p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      text-align: center;
-      padding: 0 1rem;
-    }
-
-    #green-div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: linear-gradient(to left bottom, #119f3a, #ace022);
-      padding: 2rem;
-      border-radius: 10px;
-    }
-
-    #green-div img {
-      width: 100px;
-    }
-
-    #green-div h4 {
-      font-family: 'Gilroy', sans-serif;
-      font-size: 1.5rem;
-      color: #000;
-      width: 40%;
-      text-align: center;
-    }
-
     #page3 {
       padding: 5rem 2rem;
       background: #fff;
@@ -280,35 +133,12 @@
         font-size: 1rem;
       }
 
-      #about-us {
-        flex-direction: column;
-        gap: 2rem;
-      }
-
-      #about-us img {
-        width: 150px;
-        height: 150px;
-      }
-
-      #about-us-in {
-        width: 100%;
-      }
-
-      #cards-container, #page4-container {
+      #page4-container {
         flex-direction: column;
         align-items: center;
       }
 
-      .card, .elem {
-        width: 100%;
-      }
-
-      #green-div {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      #green-div h4 {
+      .elem {
         width: 100%;
       }
     }
@@ -318,77 +148,52 @@
   <div id="cursor"></div>
   <div id="cursor-blur"></div>
   <div id="nav">
-    <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Creative Studio Logo" />
+    <img src="logo.png" alt="Creative Studio Logo" />
     <h4><a href="index.html">Home</a></h4>
     <h4><a href="contact.html">Contact</a></h4>
-    <h4><a href="ourwork.html">Our Work</a></h4>
+    <h4><a href="portfolio.html">Our Work</a></h4>
   </div>
   <div id="main">
+    <!-- Hero Section -->
     <div id="page1">
       <h1>OUR WORK</h1>
       <h2>SHOWCASING CREATIVE EXCELLENCE</h2>
       <p>Discover our portfolio of innovative web designs and digital solutions crafted for businesses worldwide.</p>
       <i class="ri-arrow-down-line"></i>
       <div id="video-container">
-        <video autoplay loop muted src="https://sidcupfamilygolf.com/wp-content/uploads/2023/02/hero.mp4"></video>
+        <video autoplay loop muted src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero.mp4"></video>
       </div>
     </div>
+    <!-- Project Showcase -->
     <div id="page2">
-      <div id="scroller">
-        <div id="scroller-in">
-          <h4>Web Design</h4>
-          <h4>UI/UX Design</h4>
-          <h4>Branding</h4>
-          <h4>Development</h4>
-          <h4>SEO</h4>
-        </div>
-        <div id="scroller-in">
-          <h4>Web Design</h4>
-          <h4>UI/UX Design</h4>
-          <h4>Branding</h4>
-          <h4>Development</h4>
-          <h4>SEO</h4>
-        </div>
-      </div>
-      <div id="about-us">
-        <img src="https://images.unsplash.com/photo-1516321310764-8a2388150b0b" alt="Team Image 1" />
-        <div id="about-us-in">
-          <h3>ABOUT US</h3>
-          <p>Creative Studio is a leading web design agency dedicated to crafting stunning, user-friendly websites that drive results. With expertise in design, development, and digital strategy, we help businesses thrive online.</p>
-        </div>
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Team Image 2" />
-      </div>
       <div id="cards-container">
-        <div class="card">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');">
           <div class="overlay">
             <h4>Sidcup Family Golf</h4>
             <p>A modern website for a golf facility with interactive elements and animations.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1516321310764-8a2388150b0b');">
           <div class="overlay">
             <h4>Magma</h4>
             <p>A dynamic website showcasing creative designs and animations.</p>
           </div>
         </div>
-        <div class="card">
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1507238691740-903d1c7b8b20');">
           <div class="overlay">
             <h4>Sheryians</h4>
             <p>A portfolio website with stunning visuals and smooth transitions.</p>
           </div>
         </div>
       </div>
-      <div id="green-div">
-        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="" />
-        <h4>SIGN UP FOR OUR NEWSLETTER TO STAY UPDATED ON OUR LATEST PROJECTS</h4>
-        <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-side.svg" alt="" />
-      </div>
     </div>
+    <!-- Testimonial -->
     <div id="page3">
       <p>"Creative Studio transformed our online presence with a website that's both beautiful and functional. Their team was professional, responsive, and truly understood our vision!"</p>
-      <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg" alt="" />
-      <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg" alt="" />
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/quote-left.svg" alt="" />
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/quote-right.svg" alt="" />
     </div>
+    <!-- Call-to-Action -->
     <div id="page4">
       <h1>WHAT ARE YOU WAITING FOR?</h1>
       <div id="page4-container">
@@ -410,7 +215,7 @@
   <div id="footer">
     <img src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/dots-footer.svg" alt="" />
     <div id="f1">
-      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="" />
+      <img src="logo-white.svg" alt="" />
     </div>
     <div id="f2">
       <h3>Web Design</h3>
@@ -465,26 +270,6 @@
       delay: 1.1
     });
 
-    gsap.from("#scroller", {
-      scrollTrigger: {
-        trigger: "#scroller",
-        start: "top 80%",
-      },
-      y: 50,
-      opacity: 0,
-      duration: 1
-    });
-
-    gsap.from("#about-us", {
-      scrollTrigger: {
-        trigger: "#about-us",
-        start: "top 80%",
-      },
-      y: 50,
-      opacity: 0,
-      duration: 1
-    });
-
     gsap.from(".card", {
       scrollTrigger: {
         trigger: "#cards-container",
@@ -495,16 +280,6 @@
       opacity: 0,
       duration: 1,
       stagger: 0.2
-    });
-
-    gsap.from("#green-div", {
-      scrollTrigger: {
-        trigger: "#green-div",
-        start: "top 80%",
-      },
-      y: 50,
-      opacity: 0,
-      duration: 1
     });
 
     gsap.from("#page3 p", {
