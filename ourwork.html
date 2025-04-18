@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work - Creative Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <style>
+    /* Additional styles for portfolio page */
+    #portfolio-hero {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1516321310764-8a2388150b0b') no-repeat center center/cover;
+      position: relative;
+      z-index: 10;
+    }
+
+    #portfolio-hero h1 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: 7.5vw;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    #portfolio-hero p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    #portfolio-hero i {
+      font-size: 2rem;
+      margin-top: 2rem;
+      cursor: pointer;
+    }
+
+    #projects {
+      padding: 5rem 2rem;
+      background: #fff;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      position: relative;
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .project-card:nth-child(1) {
+      background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+    }
+
+    .project-card:nth-child(2) {
+      background-image: url('https://images.unsplash.com/photo-1516321310764-8a2388150b0b');
+    }
+
+    .project-card:nth-child(3) {
+      background-image: url('https://images.unsplash.com/photo-1507238691740-903d1c7b8b20');
+    }
+
+    .project-card:nth-child(4) {
+      background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40');
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: #fff;
+    }
+
+    .project-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay h3 {
+      font-family: 'Gilroy', sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .overlay p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      #portfolio-hero h1 {
+        font-size: 10vw;
+      }
+
+      #portfolio-hero p {
+        font-size: 1rem;
+      }
+
+      #projects {
+        padding: 3rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-blur"></div>
+  <div id="nav">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Creative Studio Logo" />
+    <h4><a href="index.html">Home</a></h4>
+    <h4><a href="contact.html">Contact</a></h4>
+    <h4><a href="portfolio.html">Our Work</a></h4>
+  </div>
+  <div id="main">
+    <div id="portfolio-hero">
+      <h1>Our Work</h1>
+      <p>Explore our latest projects and designs.</p>
+      <i class="ri-arrow-down-line"></i>
+    </div>
+    <div id="projects">
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="overlay">
+            <h3>Sidcup Family Golf</h3>
+            <p>A modern website for a golf facility with interactive elements and animations.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="overlay">
+            <h3>Magma</h3>
+            <p>A dynamic website showcasing creative designs and animations.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="overlay">
+            <h3>Sheryians</h3>
+            <p>A portfolio website with stunning visuals and smooth transitions.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="overlay">
+            <h3>Project 4</h3>
+            <p>Another amazing project description here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/footer.png" alt="" />
+    <div id="f1">
+      <img src="https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/logo-white.svg" alt="Creative Studio Logo" />
+    </div>
+    <div id="f2">
+      <h3>Web Design</h3>
+      <h3>UI/UX</h3>
+      <h3>Branding</h3>
+    </div>
+    <div id="f3">
+      <h3>Development</h3>
+      <h3>SEO</h3>
+      <h3>Contact us</h3>
+    </div>
+    <div id="f4">
+      <h4>
+        [Your Address] <br />
+        [Your City] <br />
+        [Your State] <br />
+        [Your Zip] <br />
+        TEL: [Your Phone] <br />
+        GET DIRECTIONS <br />
+      </h4>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Animations for portfolio page
+    gsap.from("#portfolio-hero h1", {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.5
+    });
+
+    gsap.from("#portfolio-hero p", {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.7
+    });
+
+    gsap.from("#projects", {
+      scrollTrigger: {
+        trigger: "#projects",
+        start: "top 80%",
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1
+    });
+
+    gsap.from(".project-card", {
+      scrollTrigger: {
+        trigger: ".projects-grid",
+        start: "top 80%",
+        toggleActions: "play none none none"
+      },
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2
+    });
+  </script>
+</body>
+</html>
